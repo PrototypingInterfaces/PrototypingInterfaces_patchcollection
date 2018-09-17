@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\4_4_RFID\_root.v4p" filename="C:\Users\jancouver\Desktop\RFID\Advanced\_root_3.v4p" systemname="_root_3" locked="0">
-   <BOUNDS height="11700" left="0" top="0" type="Window" width="10950">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\4_4_RFID\_root.v4p" filename="C:\Users\jancouver\Desktop\RFID\Advanced\_root_3.v4p" systemname="_root_3" locked="0" scrollx="0" scrolly="-360">
+   <BOUNDS height="14475" left="0" top="0" type="Window" width="11145">
    </BOUNDS>
    <NODE componentmode="Hidden" id="287" nodename="Group (EX9)" systemname="Group (EX9)">
    <BOUNDS height="270" left="2775" top="14415" type="Node" width="5370">
@@ -16,44 +16,12 @@
    <PIN pinname="Layer 3" visible="1" slicecount="1" encoded="0" values="||">
    </PIN>
    </NODE>
-   <NODE border="1" componentmode="InAWindow" id="307" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
-   <BOUNDS height="270" left="2775" top="15270" type="Node" width="1545">
-   </BOUNDS>
-   <BOUNDS height="1800" left="2775" top="15270" type="Box" width="2400">
-   </BOUNDS>
-   <BOUNDS height="8130" left="8265" top="0" type="Window" width="10935">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D16">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Width" visible="1">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Height" visible="1">
-   </PIN>
-   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="View" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Projection" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.89896,0.89896,0.89896,1.00000|">
-   </PIN>
-   </NODE>
    <NODE componentmode="Hidden" id="315" nodename="Switch (Value Input)" systemname="Switch (Value Input)">
-   <BOUNDS height="100" left="2745" top="11130" type="Node" width="100">
+   <BOUNDS height="100" left="2700" top="10860" type="Node" width="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="0.6">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.6">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="0.4">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0.4">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -61,7 +29,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="318" nodename="Damper (Animation)" systemname="Damper (Animation)">
-   <BOUNDS height="100" left="2745" top="11550" type="Node" width="100">
+   <BOUNDS height="100" left="2715" top="11460" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Go To Position" visible="1">
    </PIN>
@@ -70,40 +38,14 @@
    <PIN pinname="FilterTime" slicecount="1" values="2">
    </PIN>
    </NODE>
-   <LINK dstnodeid="318" dstpinname="Go To Position" linkstyle="Bezier" srcnodeid="315" srcpinname="Output">
-   <LINKPOINT x="2775" y="11708">
-   </LINKPOINT>
-   <LINKPOINT x="2775" y="11558">
-   </LINKPOINT>
-   </LINK>
-   <NODE componentmode="Hidden" id="335" nodename="AspectRatio (Transform)" systemname="AspectRatio (Transform)">
-   <BOUNDS height="100" left="3645" top="15690" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1">
-   </PIN>
-   <PIN pinname="Aspect Height" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="335" dstpinname="Aspect Width" linkstyle="Bezier" srcnodeid="307" srcpinname="Actual Backbuffer Width">
-   <LINKPOINT x="3905" y="15635">
-   </LINKPOINT>
-   <LINKPOINT x="3910" y="15595">
-   </LINKPOINT>
-   </LINK>
-   <LINK dstnodeid="335" dstpinname="Aspect Height" linkstyle="Bezier" srcnodeid="307" srcpinname="Actual Backbuffer Height">
-   <LINKPOINT x="4115" y="15635">
-   </LINKPOINT>
-   <LINKPOINT x="4120" y="15595">
-   </LINKPOINT>
+   <LINK dstnodeid="318" dstpinname="Go To Position" linkstyle="PolyLine" srcnodeid="315" srcpinname="Output">
    </LINK>
    <NODE componentmode="Hidden" filename="subpatches\PlanetEarth.v4p" id="383" nodename="Subpatches\PlanetEarth.v4p" systemname="PlanetEarth">
-   <BOUNDS height="270" left="5430" top="13995" type="Node" width="2430">
+   <BOUNDS height="270" left="5430" top="13995" type="Node" width="1425">
    </BOUNDS>
    <BOUNDS height="3600" left="5430" top="13995" type="Box" width="4800">
    </BOUNDS>
-   <BOUNDS height="12180" left="0" top="0" type="Window" width="10950">
+   <BOUNDS height="12180" left="1965" top="3870" type="Window" width="11385">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="6" encoded="0" values="C:\Users\JL\Desktop\vvvv\vvvv_pi\Programmierung\Patches\2_1_05_HT_RFID_JL\assets\Maps\Map_neu-01.png,C:\Users\JL\Desktop\vvvv\vvvv_pi\Programmierung\Patches\2_1_05_HT_RFID_JL\assets\Maps\Map_neu-02.png,C:\Users\JL\Desktop\vvvv\vvvv_pi\Programmierung\Patches\2_1_05_HT_RFID_JL\assets\Maps\Map_neu-03.png,C:\Users\JL\Desktop\vvvv\vvvv_pi\Programmierung\Patches\2_1_05_HT_RFID_JL\assets\Maps\Map_neu-04.png,C:\Users\JL\Desktop\vvvv\vvvv_pi\Programmierung\Patches\2_1_05_HT_RFID_JL\assets\Maps\Map_neu-05.png,C:\Users\JL\Desktop\vvvv\vvvv_pi\Programmierung\Patches\2_1_05_HT_RFID_JL\assets\Maps\Map_neu-06.png">
    </PIN>
@@ -124,18 +66,14 @@
    <PIN pinname="Token Trigger" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="383" dstpinname="Radius" linkstyle="Bezier" srcnodeid="318" srcpinname="Position Out">
-   <LINKPOINT x="2805" y="12893">
-   </LINKPOINT>
-   <LINKPOINT x="5415" y="12893">
-   </LINKPOINT>
+   <LINK dstnodeid="383" dstpinname="Radius" linkstyle="PolyLine" srcnodeid="318" srcpinname="Position Out">
    </LINK>
    <LINK dstnodeid="287" dstpinname="Layer 2" srcnodeid="383" srcpinname="Layer">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="391">
-   <BOUNDS type="Node" left="4710" top="7185" width="100" height="100">
+   <BOUNDS type="Node" left="4800" top="7275" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4710" top="7185" width="1110" height="1380">
+   <BOUNDS type="Box" left="4800" top="7275" width="1110" height="1380">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="5">
    </PIN>
@@ -153,7 +91,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="392">
-   <BOUNDS type="Node" left="6030" top="9180" width="100" height="100">
+   <BOUNDS type="Node" left="6120" top="9180" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -163,7 +101,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="393">
-   <BOUNDS type="Node" left="7260" top="9180" width="100" height="100">
+   <BOUNDS type="Node" left="7350" top="9180" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -173,7 +111,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="394">
-   <BOUNDS type="Node" left="8490" top="9180" width="100" height="100">
+   <BOUNDS type="Node" left="8580" top="9180" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -183,9 +121,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="397" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6030" top="9600" width="0" height="0">
+   <BOUNDS type="Node" left="6120" top="9600" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6030" top="9600" width="795" height="240">
+   <BOUNDS type="Box" left="6120" top="9600" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -199,9 +137,9 @@
    <LINK srcnodeid="392" srcpinname="Output" dstnodeid="397" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="398" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7260" top="9600" width="0" height="0">
+   <BOUNDS type="Node" left="7350" top="9600" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7260" top="9600" width="795" height="240">
+   <BOUNDS type="Box" left="7350" top="9600" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -215,9 +153,9 @@
    <LINK srcnodeid="393" srcpinname="Output" dstnodeid="398" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="399" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8490" top="9600" width="0" height="0">
+   <BOUNDS type="Node" left="8580" top="9600" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8490" top="9600" width="795" height="240">
+   <BOUNDS type="Box" left="8580" top="9600" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -231,9 +169,9 @@
    <LINK srcnodeid="394" srcpinname="Output" dstnodeid="399" dstpinname="Y Input Value">
    </LINK>
    <NODE componentmode="InABox" id="400" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="4230" top="7185" type="Node" width="0">
+   <BOUNDS height="0" left="9810" top="7215" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="1395" left="4230" top="7185" type="Box" width="420">
+   <BOUNDS height="1395" left="9810" top="7215" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -249,7 +187,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|RFID Slice|">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Y Input Value" visible="1" slicecount="5" values="0,0,0,0,0">
    </PIN>
@@ -257,7 +195,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="409">
-   <BOUNDS type="Node" left="6045" top="10200" width="2505" height="270">
+   <BOUNDS type="Node" left="7080" top="10515" width="570" height="270">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -274,60 +212,18 @@
    </LINK>
    <LINK srcnodeid="399" srcpinname="Y Output Value" dstnodeid="409" dstpinname="Z">
    </LINK>
-   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="392" dstpinname="Select" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="4175" y="8823">
-   </LINKPOINT>
-   <LINKPOINT x="6685" y="8908">
-   </LINKPOINT>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="392" dstpinname="Select" linkstyle="PolyLine" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="393" dstpinname="Select" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="4125" y="8823">
-   </LINKPOINT>
-   <LINKPOINT x="7965" y="8908">
-   </LINKPOINT>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="393" dstpinname="Select" linkstyle="PolyLine" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="394" dstpinname="Select" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="4065" y="8823">
-   </LINKPOINT>
-   <LINKPOINT x="9255" y="8908">
-   </LINKPOINT>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="394" dstpinname="Select" linkstyle="PolyLine" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Earth Rotation" filename="subpatches\Earth Rotation.v4p" nodename="Subpatches\Earth Rotation.v4p" componentmode="Hidden" id="419">
-   <BOUNDS type="Node" left="5895" top="11550" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5895" top="11550" width="4230" height="4945">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2580" top="0" width="10950" height="13740">
-   </BOUNDS>
-   <PIN pinname="RFID Slice" visible="1">
-   </PIN>
-   <PIN pinname="Yaw Roll Pitch" visible="1">
-   </PIN>
-   <PIN pinname="Token Triggert" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="419" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="409" srcpinname="XYZ" dstnodeid="419" dstpinname="Spread - Input 2">
-   </LINK>
-   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="419" dstpinname="RFID Slice" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="3660" y="8100">
-   </LINKPOINT>
-   <LINKPOINT x="5865" y="8100">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="383" dstpinname="Index" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="4290" y="11253">
-   </LINKPOINT>
-   <LINKPOINT x="7800" y="11308">
-   </LINKPOINT>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="383" dstpinname="Index" linkstyle="PolyLine" hiddenwhenlocked="1">
    </LINK>
    <NODE id="293" componentmode="InABox" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="100" left="6015" top="7185" width="100">
+   <BOUNDS type="Node" height="100" left="6105" top="7275" width="100">
    </BOUNDS>
-   <BOUNDS type="Box" height="1425" left="6015" top="7185" width="1050">
+   <BOUNDS type="Box" height="1425" left="6105" top="7275" width="1050">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="5">
    </PIN>
@@ -351,9 +247,9 @@
    </PIN>
    </NODE>
    <NODE id="294" componentmode="InABox" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" height="100" left="7260" top="7185" width="100">
+   <BOUNDS type="Node" height="100" left="7350" top="7275" width="100">
    </BOUNDS>
-   <BOUNDS type="Box" height="1410" left="7260" top="7185" width="1035">
+   <BOUNDS type="Box" height="1410" left="7350" top="7275" width="1035">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="5">
    </PIN>
@@ -379,9 +275,9 @@
    <NODE id="322" componentmode="InABox" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <BOUNDS type="Node" height="100" left="8475" top="7185" width="100">
+   <BOUNDS type="Node" height="100" left="8565" top="7275" width="100">
    </BOUNDS>
-   <BOUNDS type="Box" height="1440" left="8475" top="7185" width="1005">
+   <BOUNDS type="Box" height="1440" left="8565" top="7275" width="1005">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="5">
    </PIN>
@@ -409,9 +305,9 @@
    <LINK srcnodeid="293" srcpinname="Y Output Value" dstnodeid="392" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="436" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="2715" top="10200" width="0" height="0">
+   <BOUNDS type="Node" left="2715" top="8745" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2715" top="10200" width="480" height="480">
+   <BOUNDS type="Box" left="2715" top="8745" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -428,14 +324,10 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="436" srcpinname="Y Output Value" dstnodeid="383" dstpinname="Token Triggert" linkstyle="Bezier">
-   <LINKPOINT x="2775" y="11940">
-   </LINKPOINT>
-   <LINKPOINT x="6360" y="12150">
-   </LINKPOINT>
+   <LINK srcnodeid="436" srcpinname="Y Output Value" dstnodeid="383" dstpinname="Token Triggert" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="437">
-   <BOUNDS type="Node" left="4710" top="9180" width="100" height="100">
+   <BOUNDS type="Node" left="4800" top="9180" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -447,9 +339,9 @@
    <LINK srcnodeid="391" srcpinname="Output String" dstnodeid="437" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="438">
-   <BOUNDS type="Node" left="4725" top="9600" width="100" height="100">
+   <BOUNDS type="Node" left="4815" top="9600" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4725" top="9600" width="1095" height="345">
+   <BOUNDS type="Box" left="4815" top="9600" width="1095" height="345">
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
@@ -457,12 +349,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="437" srcpinname="Output" dstnodeid="438" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="436" srcpinname="Y Output Value" dstnodeid="419" dstpinname="Token Triggert" linkstyle="Bezier">
-   <LINKPOINT x="2775" y="11100">
-   </LINKPOINT>
-   <LINKPOINT x="5895" y="11100">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="439">
    <BOUNDS type="Node" left="2700" top="8160" width="100" height="100">
@@ -491,7 +377,7 @@
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="441">
    <BOUNDS type="Node" left="5895" top="11970" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   <PIN pinname="Go To Position" visible="1">
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
@@ -500,28 +386,16 @@
    <PIN pinname="FilterTime" slicecount="1" values="3">
    </PIN>
    </NODE>
-   <LINK srcnodeid="419" srcpinname="Output" dstnodeid="441" dstpinname="Go To Position">
-   </LINK>
    <LINK srcnodeid="441" srcpinname="Position Out" dstnodeid="383" dstpinname="Rotate XYZ">
    </LINK>
-   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="437" dstpinname="Select" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="4290" y="8823">
-   </LINKPOINT>
-   <LINKPOINT x="5250" y="8908">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="409" srcpinname="XYZ" dstnodeid="419" dstpinname="Yaw Roll Pitch" linkstyle="Bezier">
-   <LINKPOINT x="6105" y="11003">
-   </LINKPOINT>
-   <LINKPOINT x="7095" y="11003">
-   </LINKPOINT>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="437" dstpinname="Select" linkstyle="PolyLine" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="436" srcpinname="Y Output Value" dstnodeid="315" dstpinname="Switch">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="442">
-   <BOUNDS type="Node" left="2700" top="7185" width="100" height="100">
+   <BOUNDS type="Node" left="2700" top="6195" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2700" top="7185" width="480" height="480">
+   <BOUNDS type="Box" left="2700" top="6195" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -538,24 +412,10 @@
    </NODE>
    <LINK srcnodeid="442" srcpinname="Y Output Value" dstnodeid="439" dstpinname="Set">
    </LINK>
-   <NODE systemname="simulate_rfid" filename="subpatches\simulate_rfid.v4p" componentmode="Hidden" id="461" nodename="Subpatches\simulate_rfid.v4p">
-   <BOUNDS type="Node" left="3465" top="4950" width="2040" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3465" top="4950" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="6495" top="825" width="10965" height="10305">
-   </BOUNDS>
-   <PIN pinname="input" visible="1" slicecount="5" values="0,0,1,0,0">
-   </PIN>
-   <PIN pinname="Token Triggert" visible="1">
-   </PIN>
-   <PIN pinname="RFID Slice" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="463">
-   <BOUNDS type="Node" left="3465" top="4440" width="100" height="100">
+   <BOUNDS type="Node" left="2715" top="4035" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3465" top="4440" width="2610" height="360">
+   <BOUNDS type="Box" left="2715" top="4035" width="2400" height="585">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -575,9 +435,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="470" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5445" top="6225" width="0" height="0">
+   <BOUNDS type="Node" left="4710" top="6195" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5445" top="6225" width="480" height="255">
+   <BOUNDS type="Box" left="4710" top="6195" width="555" height="480">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -591,27 +451,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="5" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="471" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3465" top="6225" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3465" top="6225" width="495" height="285">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Token Triggert|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="5" values="0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="515">
@@ -619,7 +459,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" encoded="0" values="assets\Atmosphere.png">
+   <PIN pinname="Filename" slicecount="1" encoded="0" visible="1" values="assets\Atmosphere.png">
    </PIN>
    <PIN pinname="Reload" visible="1" slicecount="1" values="0">
    </PIN>
@@ -641,7 +481,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="6">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="6">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="522">
@@ -662,18 +502,10 @@
    </LINK>
    <LINK srcnodeid="518" srcpinname="Output" dstnodeid="519" dstpinname="XYZ">
    </LINK>
-   <LINK srcnodeid="318" srcpinname="Position Out" dstnodeid="518" dstpinname="Input 1" linkstyle="Bezier">
-   <LINKPOINT x="2805" y="11880">
-   </LINKPOINT>
-   <LINKPOINT x="3885" y="11880">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="287" srcpinname="Layer" dstnodeid="307" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="463" srcpinname="Y Output Value" dstnodeid="461" dstpinname="input">
+   <LINK srcnodeid="318" srcpinname="Position Out" dstnodeid="518" dstpinname="Input 1" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="RFID" filename="RFID.v4p" nodename="RFID.v4p" componentmode="Hidden" id="524">
-   <BOUNDS type="Node" left="3465" top="5520" width="2040" height="270">
+   <BOUNDS type="Node" left="2955" top="5340" width="1470" height="270">
    </BOUNDS>
    <PIN pinname="Token Triggert" visible="1">
    </PIN>
@@ -681,6 +513,8 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="0">
    </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="10950" height="15675">
+   </BOUNDS>
    </NODE>
    <NODE id="100038" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" height="270" left="4890" top="2265" width="810">
@@ -731,7 +565,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -1265,7 +1099,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -1462,24 +1296,12 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="335" srcpinname="Transform Out" dstnodeid="307" dstpinname="Aspect Ratio">
-   <LINKPOINT x="3675" y="15975">
-   </LINKPOINT>
-   <LINKPOINT x="3675" y="16125">
-   </LINKPOINT>
-   <LINKPOINT x="4755" y="16125">
-   </LINKPOINT>
-   <LINKPOINT x="4755" y="15030">
-   </LINKPOINT>
-   <LINKPOINT x="4275" y="15030">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="100039" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5580" top="5520" width="6510" height="270">
+   <BOUNDS type="Node" left="5070" top="5325" width="6510" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5580" top="5520" width="2490" height="675">
+   <BOUNDS type="Box" left="5070" top="5325" width="2355" height="795">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; If you want to use your own RFID tags go into this subpatch and enter your RFID tag IDs|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; If you want to use your own RFID tags go into this subpatch and enter your RFID tag IDs.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -1488,14 +1310,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="471" srcpinname="Y Output Value" dstnodeid="442" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="470" srcpinname="Y Output Value" dstnodeid="400" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100040" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5925" top="4815" width="480" height="480">
+   <BOUNDS type="Box" left="6525" top="4635" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5925" top="4815" width="0" height="0">
+   <BOUNDS type="Node" left="6525" top="4635" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -1514,8 +1334,154 @@
    </NODE>
    <LINK srcnodeid="100040" srcpinname="Y Output Value" dstnodeid="524" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="461" srcpinname="Token Triggert" dstnodeid="471" dstpinname="Y Input Value">
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="100042">
+   <BOUNDS type="Box" left="3090" top="14850" width="390" height="375">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3090" top="14850" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.96199,0.96199,0.96199,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE id="100043" border="1" componentmode="InAWindow" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS type="Window" left="10980" top="0" width="7740" height="8085">
+   </BOUNDS>
+   <BOUNDS type="Node" height="270" left="2775" top="15345" width="1545">
+   </BOUNDS>
+   <BOUNDS type="Box" height="1800" left="2775" top="15345" width="2400">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="287" srcpinname="Layer" dstnodeid="100043" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="100042" srcpinname="Color Output" dstnodeid="100043" dstpinname="Background Color">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100044">
+   <BOUNDS type="Box" left="3120" top="13080" width="2070" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3120" top="13080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="assets\Atmosphere.png">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="image.jpg">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Pictures (*.bmp, *.dds, *.hdr, *.jpg, *.png, *.tif, *.tga)||*.bmp;*.dds;*.hdr;*.jpg;*.png;*.tif;*.tga||Bitmap (*.bmp)||*.bmp||HDR (*.hdr)||*.hdr||DDS (*.dds)||*.dds||JPG (*.jpg)||*.jpg||PNG (*.png)||*.png||TIFF (*.tif)||*.tif||Targa (*.tga)||*.tga|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100044" srcpinname="Output String" dstnodeid="515" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100045">
+   <BOUNDS type="Box" left="4170" top="11580" width="450" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4170" top="11580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100045" srcpinname="Y Output Value" dstnodeid="518" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100046">
+   <BOUNDS type="Box" left="2970" top="10485" width="495" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2970" top="10485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.4">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100046" srcpinname="Y Output Value" dstnodeid="315" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100047">
+   <BOUNDS type="Box" left="3510" top="10470" width="450" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3510" top="10470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.6">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100047" srcpinname="Y Output Value" dstnodeid="315" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="SimulateRFID" filename="subpatches\SimulateRFID.v4p" componentmode="Hidden" id="461" nodename="subpatches\SimulateRFID.v4p">
+   <BOUNDS type="Node" left="2715" top="4815" width="2040" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2715" top="4815" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7155" top="1230" width="11325" height="10305">
+   </BOUNDS>
+   <PIN pinname="input" visible="1" slicecount="5" values="0,0,1,0,0">
+   </PIN>
+   <PIN pinname="Token Triggert" visible="1">
+   </PIN>
+   <PIN pinname="RFID Slice" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="463" srcpinname="Y Output Value" dstnodeid="461" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="461" srcpinname="RFID Slice" dstnodeid="470" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="EarthRotation" filename="subpatches\EarthRotation.v4p" nodename="subpatches\EarthRotation.v4p" componentmode="Hidden" id="419">
+   <BOUNDS type="Node" left="5895" top="11550" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5895" top="11550" width="4230" height="4945">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2580" top="0" width="10950" height="13740">
+   </BOUNDS>
+   <PIN pinname="RFID Slice" visible="1">
+   </PIN>
+   <PIN pinname="Yaw Roll Pitch" visible="1">
+   </PIN>
+   <PIN pinname="Token Triggert" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="419" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="409" srcpinname="XYZ" dstnodeid="419" dstpinname="Spread - Input 2">
+   </LINK>
+   <LINK srcnodeid="400" srcpinname="Y Output Value" dstnodeid="419" dstpinname="RFID Slice" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7380" y="8120">
+   </LINKPOINT>
+   <LINKPOINT x="7725" y="8110">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="436" srcpinname="Y Output Value" dstnodeid="419" dstpinname="Token Triggert" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="419" srcpinname="Output" dstnodeid="441" dstpinname="Go To Position">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="100048">
+   <BOUNDS type="Node" left="7080" top="11070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="409" srcpinname="XYZ" dstnodeid="100048" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="100048" srcpinname="Output" dstnodeid="419" dstpinname="Yaw Roll Pitch">
+   </LINK>
+   <LINK srcnodeid="461" srcpinname="Token Triggert" dstnodeid="442" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

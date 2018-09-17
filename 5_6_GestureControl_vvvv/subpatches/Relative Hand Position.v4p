@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\5_6_Gestensteuerung\subpatches\Relative Hand Position.v4p" systemname="Relative Hand Position" filename="C:\Users\JL\Documents\PI_Patches\_patches\2_2_06_HT_Gestensteuerung_20121109_jl\subpatches\Relative Hand Position.v4p">
-   <BOUNDS type="Window" left="0" top="0" width="10950" height="19800">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\5_6_GestureControl\subpatches\Relative Hand Position.v4p" systemname="Relative Hand Position" filename="C:\Users\JL\Documents\PI_Patches\_patches\2_2_06_HT_Gestensteuerung_20121109_jl\subpatches\Relative Hand Position.v4p">
+   <BOUNDS type="Window" left="0" top="0" width="10950" height="10425">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
    <BOUNDS type="Node" left="2460" top="4440" width="100" height="100">
@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Bin Size" slicecount="1" values="3">
+   <PIN pinname="Bin Size" slicecount="1" values="3" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input">
@@ -63,7 +63,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Bin Size" slicecount="1" values="3">
+   <PIN pinname="Bin Size" slicecount="1" values="3" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
@@ -745,7 +745,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -945,5 +945,29 @@
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="77" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="77" dstpinname="Input 1">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100039">
+   <BOUNDS type="Box" left="2775" top="5235" width="315" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2775" top="5235" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100039" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="100039" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Bin Size">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\4_4_RFID\subpatches\PlanetEarth.v4p" filename="C:\Users\jancouver\Desktop\Programmierung\Patches\2_1_05_HT_RFID\02_Advanced\Subpatches\PlanetEarth.v4p" systemname="PlanetEarth">
-   <BOUNDS height="12180" left="0" top="0" type="Window" width="10950">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\4_4_RFID\subpatches\PlanetEarth.v4p" filename="C:\Users\jancouver\Desktop\Programmierung\Patches\2_1_05_HT_RFID\02_Advanced\Subpatches\PlanetEarth.v4p" systemname="PlanetEarth" scrollx="0" scrolly="3600">
+   <BOUNDS height="12180" left="1965" top="3870" type="Window" width="11385">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="3180" top="7005" type="Node" width="0">
@@ -34,18 +34,6 @@
    </LINK>
    <LINK dstnodeid="2" dstpinname="Resolution Y" linkstyle="PolyLine" srcnodeid="3" srcpinname="Y Output Value">
    </LINK>
-   <NODE componentmode="Hidden" id="5" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
-   <BOUNDS height="100" left="8400" top="8610" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Filename" visible="1" slicecount="1" encoded="0" values="..\assets\Maps\Map_neu-01.png">
-   </PIN>
-   <PIN pinname="Use Preloaded Item" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Reload" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE componentmode="InABox" id="7" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="2625" top="4440" type="Node" width="0">
    </BOUNDS>
@@ -81,9 +69,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="13" nodename="IOBox (Node)" systemname="IOBox (Node)">
-   <BOUNDS height="0" left="2070" top="12315" type="Node" width="0">
+   <BOUNDS height="0" left="2265" top="13005" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="240" left="2070" top="12315" type="Box" width="795">
+   <BOUNDS height="240" left="2265" top="13005" type="Box" width="795">
    </BOUNDS>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -91,7 +79,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="3210" top="9210" width="100" height="100">
+   <BOUNDS type="Node" left="3030" top="9210" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -99,9 +87,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
-   <BOUNDS type="Node" left="3765" top="8610" width="100" height="100">
+   <BOUNDS type="Node" left="3585" top="8610" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3765" top="8610" width="795" height="240">
+   <BOUNDS type="Box" left="3585" top="8610" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -122,18 +110,12 @@
    <PIN pinname="Select" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="5" dstpinname="Filename" linkstyle="Bezier" srcnodeid="6" srcpinname="Output">
-   <LINKPOINT x="8415" y="8298">
-   </LINKPOINT>
-   <LINKPOINT x="8415" y="8383">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Select">
    </LINK>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="22">
    <BOUNDS type="Node" left="8400" top="4440" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Directory" slicecount="1" encoded="0" values="..\assets\Maps\countrys">
+   <PIN pinname="Directory" slicecount="1" encoded="0" visible="1" values="..\assets\Maps\countrys">
    </PIN>
    <PIN pinname="Filenames" visible="1">
    </PIN>
@@ -142,24 +124,12 @@
    <PIN pinname="Update" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="24" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
-   <BOUNDS height="100" left="6645" top="8610" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Filename" visible="1" slicecount="1" encoded="0" values="..\assets\Maps\Map_neu-01.png">
-   </PIN>
-   <PIN pinname="Use Preloaded Item" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Reload" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="4920" top="9210" width="3540" height="270">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -180,10 +150,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Texture Out" dstnodeid="25" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="25" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Switch">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="30" systemname="IOBox (String)">
@@ -226,16 +192,14 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="24" dstpinname="Filename">
-   </LINK>
    <NODE id="34" systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Layer 1" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 2" visible="1" pintype="Input">
+   <PIN pinname="Layer 2" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Node" left="2070" top="11895" width="3345" height="270">
+   <BOUNDS type="Node" left="2265" top="12585" width="3345" height="270">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -248,44 +212,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="32" srcpinname="Layer" dstnodeid="34" dstpinname="Layer 2">
-   </LINK>
-   <NODE id="32" systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Layer" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Texture" visible="1" pintype="Input">
-   </PIN>
-   <PIN pinname="Transform" visible="1" pintype="Input">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" pintype="Input" visible="0" values="1">
-   </PIN>
-   <BOUNDS type="Node" left="3705" top="11475" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Render State" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Sampler State" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Transform" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Coord Mapping" pintype="Input" visible="0" slicecount="1" values="OnShape_UV">
-   </PIN>
-   <PIN pinname="Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Draw Slicewise" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Space" pintype="Input" slicecount="1" values="World">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="35" dstpinname="Filename" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="6870" y="9333">
-   </LINKPOINT>
-   <LINKPOINT x="4080" y="9403">
-   </LINKPOINT>
-   </LINK>
    <NODE id="33" systemname="Cons (String)" nodename="Cons (String)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" hiddenwhenlocked="0" managers="">
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -316,96 +242,12 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE id="35" systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Filename" visible="1" pintype="Input" encoded="0">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Node" left="4020" top="11055" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Load In Background" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Reload" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Use Preloaded Item" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Type" pintype="Input" visible="-1" slicecount="1" values="Texture">
-   </PIN>
-   <PIN pinname="Format" pintype="Input" visible="-1" slicecount="1" values="|No Specific|">
-   </PIN>
-   <PIN pinname="Mip Map Count" pintype="Input" visible="-1" slicecount="1" values="Automatic">
-   </PIN>
-   <PIN pinname="Repair" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Preload" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Width" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Height" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Depth" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Original Width" pintype="Output" visible="0">
-   </PIN>
-   <PIN pinname="Original Height" pintype="Output" visible="0">
-   </PIN>
-   <PIN pinname="Original Depth" pintype="Output" visible="0">
-   </PIN>
-   <PIN pinname="Original MipMap Count" pintype="Output" visible="0">
-   </PIN>
-   <PIN pinname="Up And Running" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="35" srcpinname="Texture Out" dstnodeid="32" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Transform Out" dstnodeid="32" dstpinname="Transform">
-   </LINK>
-   <NODE id="36" systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Transform Out" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="XYZ" slicecount="1" pintype="Input" visible="1" values="0">
-   </PIN>
-   <BOUNDS type="Node" left="3885" top="10650" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Transform In" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="33" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="13" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
-   <BOUNDS type="Node" left="7485" top="7875" width="100" height="100">
+   <BOUNDS type="Node" left="9225" top="8085" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7485" top="7875" width="345" height="375">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Use Preloaded Item|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Use Preloaded Item">
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
-   <BOUNDS type="Node" left="9225" top="7875" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9225" top="7875" width="345" height="375">
+   <BOUNDS type="Box" left="9225" top="8085" width="345" height="375">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -419,9 +261,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Use Preloaded Item|">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Use Preloaded Item">
-   </LINK>
    <NODE id="100038" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" height="270" left="4890" top="2265" width="810">
    </BOUNDS>
@@ -471,7 +313,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -1005,7 +847,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -1206,24 +1048,204 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Filenames" dstnodeid="6" dstpinname="Input">
    </LINK>
-   <NODE systemname="ConstantSphere (EX9.Effect)" filename="..\effects\ConstantSphere.fx" nodename="ConstantSphere (EX9.Effect)" componentmode="Hidden" id="100039">
-   <BOUNDS type="Node" left="2070" top="10230" width="5220" height="270">
+   <NODE systemname="ConstantWrap (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\ConstantWrap.fx" nodename="ConstantWrap (EX9.Effect)" componentmode="Hidden" id="100040">
+   <BOUNDS type="Node" left="2265" top="10200" width="3915" height="270">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Mesh" dstnodeid="100039" dstpinname="Mesh">
+   <LINK srcnodeid="2" srcpinname="Mesh" dstnodeid="100040" dstpinname="Mesh">
    </LINK>
-   <LINK srcnodeid="16" srcpinname="Transform Out" dstnodeid="100039" dstpinname="Transform">
+   <LINK srcnodeid="16" srcpinname="Transform Out" dstnodeid="100040" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="100039" dstpinname="Texture">
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="100040" dstpinname="Texture">
    </LINK>
-   <LINK srcnodeid="100039" srcpinname="Layer" dstnodeid="34" dstpinname="Layer 1">
+   <LINK srcnodeid="100040" srcpinname="Layer" dstnodeid="34" dstpinname="Layer 1">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100041">
+   <BOUNDS type="Box" left="8565" top="4050" width="2070" height="285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8565" top="4050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Maps\countries">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100041" srcpinname="Output String" dstnodeid="22" dstpinname="Directory">
+   </LINK>
+   <NODE componentmode="Hidden" id="100042" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="6645" top="8610" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Load In Background" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100042" srcpinname="Texture Out" dstnodeid="25" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="100042" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="100042" dstpinname="Use Preloaded Item">
+   </LINK>
+   <NODE componentmode="Hidden" id="100043" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="8400" top="8610" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Load In Background" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100043" dstpinname="Filename" linkstyle="Bezier" srcnodeid="6" srcpinname="Output">
+   <LINKPOINT x="8415" y="8298">
+   </LINKPOINT>
+   <LINKPOINT x="8415" y="8383">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="100043" srcpinname="Texture Out" dstnodeid="25" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="100043" dstpinname="Use Preloaded Item">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <NODE id="36" systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" hiddenwhenlocked="1" managers="">
+   <PIN pinname="XYZ" slicecount="1" pintype="Input" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="3000" top="11205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Transform In" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="32" systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" hiddenwhenlocked="1" managers="">
+   <PIN pinname="Enabled" slicecount="1" pintype="Input" visible="0" values="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Texture" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Transform" visible="1" pintype="Input">
+   </PIN>
+   <BOUNDS type="Node" left="3885" top="11625" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Render State" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Sampler State" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Coord Mapping" pintype="Input" visible="0" slicecount="1" values="OnShape_UV">
+   </PIN>
+   <PIN pinname="Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Draw Slicewise" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Space" pintype="Input" slicecount="1" values="World">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="35" systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" hiddenwhenlocked="1" managers="">
+   <PIN pinname="Use Preloaded Item" slicecount="1" visible="1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="Filename" visible="1" pintype="Input" encoded="0">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="4200" top="11160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Load In Background" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reload" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Type" pintype="Input" visible="-1" slicecount="1" values="Texture">
+   </PIN>
+   <PIN pinname="Format" pintype="Input" visible="-1" slicecount="1" values="|No Specific|">
+   </PIN>
+   <PIN pinname="Mip Map Count" pintype="Input" visible="-1" slicecount="1" values="Automatic">
+   </PIN>
+   <PIN pinname="Repair" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Preload" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Width" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Height" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Depth" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Original Width" pintype="Output" visible="0">
+   </PIN>
+   <PIN pinname="Original Height" pintype="Output" visible="0">
+   </PIN>
+   <PIN pinname="Original Depth" pintype="Output" visible="0">
+   </PIN>
+   <PIN pinname="Original MipMap Count" pintype="Output" visible="0">
+   </PIN>
+   <PIN pinname="Up And Running" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Texture Out" dstnodeid="32" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="35" dstpinname="Filename" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6930" y="9368">
+   </LINKPOINT>
+   <LINKPOINT x="4200" y="9473">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Transform Out" dstnodeid="32" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Layer" dstnodeid="34" dstpinname="Layer 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="100044">
+   <BOUNDS type="Node" left="5205" top="11595" width="7275" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5205" top="11595" width="3180" height="750">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; This is a dummy Quad with the Scale of 0. It needs to be here just in order to preload the textures.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100045" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="3930" top="10740" width="405" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3930" top="10740" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100045" srcpinname="Y Output Value" dstnodeid="36" dstpinname="XYZ" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

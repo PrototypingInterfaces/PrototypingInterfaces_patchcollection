@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\2_VVVV-Basics\2_13_Input\01_MouseInput.v4p" systemname="Input" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_13_Input\Input.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\2_VVVV-Basics\2_13_Input\01_MouseInput.v4p" systemname="Input" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_13_Input\Input.v4p">
    <BOUNDS type="Window" left="0" top="0" width="10950" height="9450">
    </BOUNDS>
    <NODE id="100038" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
@@ -51,7 +51,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -441,7 +441,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -638,28 +638,8 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE componentmode="InAWindow" id="100047" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
-   <BOUNDS height="100" left="2130" top="7170" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="1800" left="2130" top="7170" type="Box" width="2400">
-   </BOUNDS>
-   <BOUNDS height="6510" left="10995" top="0" type="Window" width="6240">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
    <NODE componentmode="Hidden" id="100045" nodename="Segment (DX9)" systemname="Segment (DX9)">
-   <BOUNDS height="100" left="2130" top="6300" type="Node" width="100">
+   <BOUNDS height="100" left="2115" top="6495" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -668,36 +648,22 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="100047" dstpinname="Layers" srcnodeid="100045" srcpinname="Layer">
-   </LINK>
-   <NODE componentmode="Hidden" id="100044" nodename="Transform (Transform 2d)" systemname="Transform (Transform 2d)">
-   <BOUNDS height="100" left="2310" top="5160" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="TranslateX" visible="1">
-   </PIN>
-   <PIN pinname="TranslateY" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
    <NODE componentmode="Hidden" id="100043" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
-   <BOUNDS height="100" left="2310" top="5880" type="Node" width="100">
+   <BOUNDS height="100" left="2295" top="6075" type="Node" width="100">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="XYZ" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="100043" dstpinname="Transform In" srcnodeid="100044" srcpinname="Transform Out">
-   </LINK>
    <LINK dstnodeid="100045" dstpinname="Transform" srcnodeid="100043" srcpinname="Transform Out">
    </LINK>
    <NODE componentmode="InABox" id="100042" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="4785" top="4755" type="Node" width="0">
+   <BOUNDS height="0" left="4785" top="4950" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="255" left="4785" top="4755" type="Box" width="420">
+   <BOUNDS height="255" left="4785" top="4950" type="Box" width="420">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.15">
    </PIN>
@@ -709,13 +675,13 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="100041" nodename="Switch (Value Input)" systemname="Switch (Value Input)">
-   <BOUNDS height="270" left="4200" top="5160" type="Node" width="1230">
+   <BOUNDS height="270" left="4200" top="5355" type="Node" width="1230">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -723,9 +689,9 @@
    <LINK dstnodeid="100041" dstpinname="Input 1" srcnodeid="100042" srcpinname="Y Output Value">
    </LINK>
    <NODE componentmode="InABox" id="100040" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="5370" top="4755" type="Node" width="0">
+   <BOUNDS height="0" left="5370" top="4950" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="255" left="5370" top="4755" type="Box" width="420">
+   <BOUNDS height="255" left="5370" top="4950" type="Box" width="420">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.3">
    </PIN>
@@ -738,32 +704,14 @@
    </NODE>
    <LINK dstnodeid="100041" dstpinname="Input 2" srcnodeid="100040" srcpinname="Y Output Value">
    </LINK>
-   <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="100039">
-   <BOUNDS type="Node" left="2310" top="4440" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   <PIN pinname="Left Button" visible="1">
-   </PIN>
-   <PIN pinname="Mouse" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="100039" srcpinname="X" dstnodeid="100044" dstpinname="TranslateX">
-   </LINK>
-   <LINK srcnodeid="100039" srcpinname="Y" dstnodeid="100044" dstpinname="TranslateY">
-   </LINK>
-   <LINK srcnodeid="100039" srcpinname="Left Button" dstnodeid="100041" dstpinname="Switch">
-   </LINK>
    <LINK srcnodeid="100041" srcpinname="Output" dstnodeid="100043" dstpinname="XYZ">
    </LINK>
    <NODE id="100055" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" width="2805" height="570" left="2310" top="3855">
+   <BOUNDS type="Box" width="3720" height="615" left="2310" top="3855">
    </BOUNDS>
    <PIN pinname="Size" slicecount="1" pintype="Configuration" values="9">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|Move the Mouse over the Render Window.|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|Move the Mouse over the Render Window and click left mouse button.|">
    </PIN>
    <BOUNDS type="Node" left="2310" top="3855" width="5880" height="2370">
    </BOUNDS>
@@ -808,4 +756,56 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
+   <NODE componentmode="InAWindow" id="100056" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="2115" top="7365" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="2115" top="7365" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="6510" left="10995" top="0" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100056" dstpinname="Layers" srcnodeid="100045" srcpinname="Layer">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="100039">
+   <BOUNDS type="Node" left="2310" top="4635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   <PIN pinname="Position (Projection) XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100039" srcpinname="Left Button" dstnodeid="100041" dstpinname="Switch">
+   </LINK>
+   <NODE componentmode="Hidden" id="100044" nodename="Transform (Transform 2d Vector)" systemname="Transform (Transform 2d Vector)">
+   <BOUNDS height="100" left="2295" top="5355" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="TranslateX" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100043" dstpinname="Transform In" srcnodeid="100044" srcpinname="Transform Out">
+   </LINK>
+   <LINK srcnodeid="100039" srcpinname="X" dstnodeid="100044" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="100039" srcpinname="Y" dstnodeid="100044" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="100039" srcpinname="Position (Projection) XY" dstnodeid="100044" dstpinname="TranslateXY">
+   </LINK>
    </PATCH>

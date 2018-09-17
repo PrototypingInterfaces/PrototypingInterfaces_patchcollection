@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\2_VVVV-Basics\2_13_Input\02_KeyboardInput.v4p" systemname="Input" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_13_Input\Input.v4p">
-   <BOUNDS type="Window" left="0" top="0" width="10950" height="9450">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\2_VVVV-Basics\2_13_Input\02_KeyboardInput.v4p" systemname="Input" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_13_Input\Input.v4p">
+   <BOUNDS type="Window" left="0" top="0" width="10950" height="8535">
    </BOUNDS>
    <NODE id="100038" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" height="270" left="4890" top="2265" width="810">
@@ -51,7 +51,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -441,7 +441,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -639,7 +639,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" filename="%VVVV%\plugins\DrawText.dll" id="100054" nodename="Text (EX9)" systemname="Text (EX9)">
-   <BOUNDS height="100" left="3675" top="6060" type="Node" width="100">
+   <BOUNDS height="100" left="5430" top="6360" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -651,9 +651,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InAWindow" id="100053" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
-   <BOUNDS height="100" left="3675" top="6930" type="Node" width="100">
+   <BOUNDS height="100" left="5430" top="7230" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="2685" left="3675" top="6930" type="Box" width="2595">
+   <BOUNDS height="2685" left="5430" top="7230" type="Box" width="2595">
    </BOUNDS>
    <BOUNDS height="6510" left="10950" top="0" type="Window" width="6240">
    </BOUNDS>
@@ -673,54 +673,10 @@
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
+   <PIN pinname="Auto Aspect Ratio" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK dstnodeid="100053" dstpinname="Layers" srcnodeid="100054" srcpinname="Layer">
-   </LINK>
-   <NODE componentmode="Hidden" id="100052" nodename="Keyboard (System Global)" systemname="Keyboard (System Global)" filename="%VVVV%\lib\nodes\modules\System\Keyboard (System Global).v4p">
-   <BOUNDS height="100" left="3990" top="4830" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Keyboard Output" visible="1">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Key" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="ApplyModifiers (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="ApplyModifiers (String)" componentmode="Hidden" id="100051">
-   <BOUNDS type="Node" left="3990" top="5640" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="100052" srcpinname="Keyboard" dstnodeid="100051" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="100051" srcpinname="Output" dstnodeid="100054" dstpinname="Text">
-   </LINK>
-   <NODE componentmode="InABox" id="100050" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="5085" top="5250" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="240" left="5085" top="5250" type="Box" width="795">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN encoded="0" pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Input String" encoded="0" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="100049" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="4140" top="5250" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4140" top="5250" width="795" height="240">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="100052" srcpinname="Keyboard" dstnodeid="100049" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="100052" srcpinname="Key" dstnodeid="100050" dstpinname="Input String">
    </LINK>
    <NODE id="100056" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Box" width="2805" height="570" left="3960" top="4215">
@@ -772,4 +728,88 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
+   <NODE componentmode="Hidden" id="100052" nodename="Keyboard (Devices Desktop)" systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS height="100" left="3990" top="4980" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Keyboard Output" visible="1">
+   </PIN>
+   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Key" visible="1">
+   </PIN>
+   <PIN pinname="Key Name" visible="1">
+   </PIN>
+   <PIN pinname="Device" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="KeyStates (Keyboard Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyStates (Keyboard Split)" componentmode="Hidden" id="100057">
+   <BOUNDS type="Node" left="4005" top="5550" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4005" top="5550" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   <PIN pinname="Key Char" visible="1">
+   </PIN>
+   <PIN pinname="Key Name" visible="1">
+   </PIN>
+   <PIN pinname="Key Code" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100052" srcpinname="Device" dstnodeid="100057" dstpinname="Keyboard">
+   </LINK>
+   <LINK srcnodeid="100057" srcpinname="Key Char" dstnodeid="100054" dstpinname="Text">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100059" exposed="0">
+   <BOUNDS type="Box" left="2190" top="6375" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2190" top="6375" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Key Name|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100057" srcpinname="Key Name" dstnodeid="100059" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100060" exposed="0">
+   <BOUNDS type="Box" left="3240" top="6375" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3240" top="6375" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Key Code|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100057" srcpinname="Key Code" dstnodeid="100060" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100061" exposed="0">
+   <BOUNDS type="Box" left="4245" top="6375" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4245" top="6375" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Key Char|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100057" srcpinname="Key Char" dstnodeid="100061" dstpinname="Input String">
+   </LINK>
    </PATCH>

@@ -1,47 +1,7 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\2_VVVV-Basics\2_07_Transformations\Transformations.v4p" systemname="Transformationen" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_07_Transformationen\Transformationen.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\2_VVVV-Basics\2_07_Transformations\Transformations.v4p" systemname="Transformationen" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_07_Transformationen\Transformationen.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="0" top="0" width="12600" height="13830">
    </BOUNDS>
-   <NODE componentmode="InABox" id="33" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
-   <BOUNDS height="100" left="5385" top="7575" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="2115" left="5385" top="7575" type="Box" width="1995">
-   </BOUNDS>
-   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="32" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
-   <BOUNDS height="100" left="2820" top="7575" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="2115" left="2820" top="7575" type="Box" width="1995">
-   </BOUNDS>
-   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
    <NODE componentmode="Hidden" id="31" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
    <BOUNDS height="100" left="2985" top="6015" type="Node" width="100">
    </BOUNDS>
@@ -68,26 +28,6 @@
    </NODE>
    <LINK dstnodeid="31" dstpinname="XYZ" srcnodeid="30" srcpinname="Y Output Value">
    </LINK>
-   <NODE componentmode="InABox" id="29" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
-   <BOUNDS height="100" left="255" top="7575" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="2115" left="255" top="7575" type="Box" width="1995">
-   </BOUNDS>
-   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
    <NODE componentmode="InABox" id="28" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="600" top="4740" type="Node" width="0">
    </BOUNDS>
@@ -196,8 +136,6 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="29" dstpinname="Layers" srcnodeid="23" srcpinname="Layer">
-   </LINK>
    <LINK dstnodeid="23" dstpinname="Transform" srcnodeid="26" srcpinname="Transform Out">
    </LINK>
    <NODE componentmode="Hidden" id="22" nodename="Quad (DX9)" systemname="Quad (DX9)">
@@ -208,8 +146,6 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="32" dstpinname="Layers" srcnodeid="22" srcpinname="Layer">
-   </LINK>
    <LINK dstnodeid="22" dstpinname="Transform" srcnodeid="31" srcpinname="Transform Out">
    </LINK>
    <NODE componentmode="Hidden" id="21" nodename="Quad (DX9)" systemname="Quad (DX9)">
@@ -220,11 +156,9 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="33" dstpinname="Layers" srcnodeid="21" srcpinname="Layer">
-   </LINK>
    <LINK dstnodeid="21" dstpinname="Transform" srcnodeid="25" srcpinname="Transform Out">
    </LINK>
-   <NODE componentmode="InABox" id="20" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="InABox" id="20" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="100" left="15450" top="7320" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="2115" left="15450" top="7320" type="Box" width="1995">
@@ -242,6 +176,8 @@
    <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Auto Aspect Ratio" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="19" nodename="Quad (DX9)" systemname="Quad (DX9)">
@@ -348,20 +284,6 @@
    <LINKPOINT x="17355" y="5798">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="13">
-   <BOUNDS type="Node" left="1980" top="17250" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1980" top="17250" width="2655" height="2565">
-   </BOUNDS>
-   <BOUNDS type="Window" left="17400" top="9390" width="6240" height="6105">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Clear">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
    <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="12">
    <BOUNDS type="Node" left="1980" top="16350" width="100" height="100">
    </BOUNDS>
@@ -374,8 +296,6 @@
    <PIN pinname="Color" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="13" dstpinname="Layers">
-   </LINK>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="2130" top="15510" width="100" height="100">
    </BOUNDS>
@@ -393,7 +313,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2925" top="10965" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.43">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-2.12">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -550,12 +470,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Clear" linkstyle="Bezier">
-   <LINKPOINT x="4485" y="14348">
-   </LINKPOINT>
-   <LINKPOINT x="2175" y="14348">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="3555" top="15945" width="100" height="100">
    </BOUNDS>
@@ -629,7 +543,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -1019,7 +933,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -1320,26 +1234,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE componentmode="InABox" id="100048" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
-   <BOUNDS height="100" left="8280" top="7575" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="2115" left="8280" top="7575" type="Box" width="1995">
-   </BOUNDS>
-   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
    <NODE componentmode="InABox" id="100047" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="8910" top="4740" type="Node" width="0">
    </BOUNDS>
@@ -1410,8 +1304,6 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="100048" dstpinname="Layers" srcnodeid="100044" srcpinname="Layer">
-   </LINK>
    <LINK dstnodeid="100044" dstpinname="Transform" srcnodeid="100045" srcpinname="Transform Out">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="100049" systemname="IOBox (String)">
@@ -1466,6 +1358,76 @@
    <LINKPOINT x="9760" y="6225">
    </LINKPOINT>
    <LINKPOINT x="10025" y="6225">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="100052" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="8280" top="7575" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2115" left="8280" top="7575" type="Box" width="1995">
+   </BOUNDS>
+   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100052" dstpinname="Layers" srcnodeid="100044" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="100053" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="5385" top="7575" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2115" left="5385" top="7575" type="Box" width="1995">
+   </BOUNDS>
+   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100053" dstpinname="Layers" srcnodeid="21" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="100054" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="2820" top="7575" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2115" left="2820" top="7575" type="Box" width="1995">
+   </BOUNDS>
+   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100054" dstpinname="Layers" srcnodeid="22" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="100055" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="255" top="7575" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2115" left="255" top="7575" type="Box" width="1995">
+   </BOUNDS>
+   <BOUNDS height="5010" left="13245" top="615" type="Window" width="4740">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100055" dstpinname="Layers" srcnodeid="23" srcpinname="Layer">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE systemname="RENDERER (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="100056">
+   <BOUNDS type="Node" left="1980" top="17250" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="17250" width="2655" height="2565">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17400" top="9390" width="6240" height="6105">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="100056" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="100056" dstpinname="Clear" linkstyle="Bezier">
+   <LINKPOINT x="4485" y="14348">
+   </LINKPOINT>
+   <LINKPOINT x="2175" y="14348">
    </LINKPOINT>
    </LINK>
    </PATCH>

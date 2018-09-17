@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\2_VVVV-Basics\2_05_Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_05_ Renderer\Renderer.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\2_VVVV-Basics\2_05_Renderer\Renderer.v4p" systemname="Renderer" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_05_ Renderer\Renderer.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="0" top="0" width="10950" height="8550">
    </BOUNDS>
-   <NODE componentmode="InAWindow" id="4" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="InAWindow" id="4" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="100" left="1020" top="5925" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="1800" left="1020" top="5925" type="Box" width="2400">
@@ -21,8 +21,10 @@
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Auto Aspect Ratio" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <NODE componentmode="InABox" id="3" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="InABox" id="3" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="100" left="5190" top="5925" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="1800" left="5190" top="5925" type="Box" width="2400">
@@ -41,11 +43,13 @@
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Auto Aspect Ratio" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE componentmode="InABox" id="2" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="2610" top="5925" type="Node" width="4185">
+   <BOUNDS height="270" left="2775" top="5925" type="Node" width="4185">
    </BOUNDS>
-   <BOUNDS height="1155" left="2610" top="5925" type="Box" width="1515">
+   <BOUNDS height="1155" left="2775" top="5925" type="Box" width="1515">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|&lt; Renderer Node brings up the Renderer as own window.|">
    </PIN>
@@ -473,7 +477,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -671,7 +675,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -720,4 +724,8 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
    </PATCH>

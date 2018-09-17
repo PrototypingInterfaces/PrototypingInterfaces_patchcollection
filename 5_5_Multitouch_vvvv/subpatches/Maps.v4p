@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\5_5_Multitouch\subpatches\Maps.v4p" filename="C:\Users\dl-110\Desktop\Multitouch\Beispiel2\subpatches\Maps.v4p" systemname="Maps">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\5_5_Multitouch\subpatches\Maps.v4p" filename="C:\Users\dl-110\Desktop\Multitouch\Beispiel2\subpatches\Maps.v4p" systemname="Maps" scrollx="0" scrolly="-360">
    <BOUNDS height="12240" left="0" top="0" type="Window" width="10950">
    </BOUNDS>
    <NODE componentmode="Hidden" id="9" nodename="HSV (Color Join)" systemname="HSV (Color Join)">
@@ -21,7 +21,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="2" nodename="Quad (DX9)" systemname="Quad (DX9)">
-   <BOUNDS height="270" left="2055" top="10155" type="Node" width="2370">
+   <BOUNDS height="270" left="2055" top="11760" type="Node" width="2370">
    </BOUNDS>
    <PIN pinname="Texture" visible="1">
    </PIN>
@@ -35,9 +35,9 @@
    <LINK dstnodeid="2" dstpinname="Color" srcnodeid="9" srcpinname="Output">
    </LINK>
    <NODE componentmode="InABox" id="11" nodename="IOBox (Node)" systemname="IOBox (Node)">
-   <BOUNDS height="0" left="2055" top="10575" type="Node" width="0">
+   <BOUNDS height="0" left="2055" top="12180" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="240" left="2055" top="10575" type="Box" width="795">
+   <BOUNDS height="240" left="2055" top="12180" type="Box" width="795">
    </BOUNDS>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -50,6 +50,10 @@
    <PIN encoded="0" pinname="Filename" slicecount="4" visible="1" values="..\..\assets\00_MB.png,..\..\assets\01_EG.png,..\..\assets\02_1OG.png,..\..\assets\03_2OG.png">
    </PIN>
    <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Original Width" visible="1">
+   </PIN>
+   <PIN pinname="Original Height" visible="1">
    </PIN>
    </NODE>
    <LINK dstnodeid="2" dstpinname="Texture" srcnodeid="14" srcpinname="Texture Out" hiddenwhenlocked="0">
@@ -94,8 +98,6 @@
    <PIN pinname="ScaleXY" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="2" dstpinname="Transform" srcnodeid="10" srcpinname="Transform Out" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Oscillator (Animation)" nodename="Oscillator (Animation)" componentmode="Hidden" id="50">
    <BOUNDS type="Node" left="2760" top="7575" width="100" height="100">
    </BOUNDS>
@@ -281,7 +283,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -815,7 +817,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -1012,4 +1014,46 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="100039">
+   <BOUNDS type="Node" left="2385" top="10965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Uniform Scale" visible="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitOut">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Original Width" dstnodeid="100039" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Original Height" dstnodeid="100039" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="100039" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Transform Out" dstnodeid="100039" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100040">
+   <BOUNDS type="Box" left="3045" top="10560" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3045" top="10560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100040" srcpinname="Y Output Value" dstnodeid="100039" dstpinname="Uniform Scale">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
    </PATCH>

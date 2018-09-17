@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\2_VVVV-Basics\2_16_Spreads\02_ThePowerOfSpreads.v4p" systemname="Spreads" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_16_Spreads\Spreads.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Work\PrototypingInterfaces\2_VVVV-Basics\2_16_Spreads\02_ThePowerOfSpreads.v4p" systemname="Spreads" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_16_Spreads\Spreads.v4p">
    <BOUNDS type="Window" left="0" top="0" width="11460" height="13050">
    </BOUNDS>
    <NODE id="100038" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
@@ -51,7 +51,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_50beta36&cr;&lf;2018|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -441,7 +441,7 @@
    </PIN>
    </NODE>
    <NODE id="100026" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|DEVELOPED WITH:|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|UPDATED FOR:|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="1815" width="810">
    </BOUNDS>
@@ -638,28 +638,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE componentmode="InABox" id="100069" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
-   <BOUNDS height="100" left="180" top="8790" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="2655" left="180" top="8790" type="Box" width="2595">
-   </BOUNDS>
-   <BOUNDS height="5010" left="1800" top="9255" type="Window" width="4740">
-   </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
    <NODE componentmode="Hidden" id="100068" nodename="Segment (DX9)" systemname="Segment (DX9)">
    <BOUNDS height="100" left="150" top="7035" type="Node" width="100">
    </BOUNDS>
@@ -687,8 +665,6 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="100067" dstpinname="Layer 1" srcnodeid="100068" srcpinname="Layer">
-   </LINK>
-   <LINK dstnodeid="100069" dstpinname="Layers" srcnodeid="100067" srcpinname="Layer">
    </LINK>
    <NODE componentmode="Hidden" id="100066" nodename="Segment (DX9)" systemname="Segment (DX9)">
    <BOUNDS height="100" left="1950" top="7035" type="Node" width="100">
@@ -980,30 +956,6 @@
    </NODE>
    <LINK dstnodeid="100047" dstpinname="Spread Count" srcnodeid="100042" srcpinname="Y Output Value">
    </LINK>
-   <NODE componentmode="InABox" id="100041" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
-   <BOUNDS height="100" left="8160" top="8775" type="Node" width="100">
-   </BOUNDS>
-   <BOUNDS height="2655" left="8160" top="8775" type="Box" width="2595">
-   </BOUNDS>
-   <BOUNDS height="5010" left="1800" top="9255" type="Window" width="4740">
-   </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="100041" dstpinname="Layers" srcnodeid="100050" srcpinname="Layer">
-   </LINK>
    <NODE componentmode="InABox" id="100040" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="4065" top="9885" type="Node" width="1275">
    </BOUNDS>
@@ -1034,4 +986,32 @@
    </NODE>
    <LINK dstnodeid="100039" dstpinname="Y Input Value" linkstyle="PolyLine" srcnodeid="100047" srcpinname="Output">
    </LINK>
+   <NODE componentmode="InABox" id="100070" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="180" top="8790" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2655" left="180" top="8790" type="Box" width="2595">
+   </BOUNDS>
+   <BOUNDS height="5010" left="1800" top="9255" type="Window" width="4740">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100070" dstpinname="Layers" srcnodeid="100067" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="100071" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="8160" top="8775" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2655" left="8160" top="8775" type="Box" width="2595">
+   </BOUNDS>
+   <BOUNDS height="5010" left="1800" top="9255" type="Window" width="4740">
+   </BOUNDS>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100071" dstpinname="Layers" srcnodeid="100050" srcpinname="Layer">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
    </PATCH>
