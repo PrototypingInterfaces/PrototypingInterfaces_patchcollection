@@ -1,6 +1,6 @@
 # Info:  
 The Patches in this Repository are developed with:  
-* vvvv_45beta29.2  
+* vvvv45beta31.2
 
 # For more info please visit:  
 * http://prototypinginterfaces.com/ the Book about VVVV and Prototyping where all Patches are explained in full detail.  
