@@ -6,7 +6,7 @@
 * https://vvvv.org/ the visual/textual development environment used for all the examples in this repository.
 
 ### September 2018 update:  
-https://github.com/joreg & https://github.com/antongit added as Collaborators patches updated based on their work from: https://github.com/vvvv/PrototypingInterfaces
+https://github.com/joreg & https://github.com/antongit added as Collaborators. Patches updated based on their work from: https://github.com/vvvv/PrototypingInterfaces
 
 
 
