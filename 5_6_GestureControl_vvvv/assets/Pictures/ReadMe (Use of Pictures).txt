@@ -1,0 +1,2 @@
+You are free to use the provided pictures for your own use as long as you state somewhere in your project that the pictures were taken by Markus Lorenz Schilling.
+For further information or questions: mail@markuslorenzschilling.de

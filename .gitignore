@@ -1,0 +1,39 @@
+# VVVV            #
+###################
+
+vvvv.exe
+vvvv.rsm
+vvvv.map
+*~.xml
+*.csproj.user
+obj/
+bin/
+*.suo
+UpgradeLog.XML
+Backup/
+_UpgradeReport_Files/
+*.log
+vvvv_*.zip
+addons_*.zip
+
+# NO VVVV         #
+###################
+*.3dm.bak
+*3dm.rhl
+
+###################
+# OS files        #
+###################
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
