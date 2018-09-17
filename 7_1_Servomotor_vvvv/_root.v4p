@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\dl-110\Documents\GitHub\All_Patches\7_1_beta29.2_Servomotor\_root.v4p" systemname="_root" filename="C:\Users\JL\Documents\PI_Patches\_patches\2_4_01_HT_Servomotor_jl_20121111\_root.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\JL\Documents\GitHub\7_1_Servomotor\_root.v4p" systemname="_root" filename="C:\Users\JL\Documents\PI_Patches\_patches\2_4_01_HT_Servomotor_jl_20121111\_root.v4p">
    <BOUNDS type="Window" left="0" top="0" width="10950" height="19800">
    </BOUNDS>
    <NODE systemname="GUI" filename="subpatches\GUI.v4p" componentmode="Hidden" id="1" nodename="subpatches\GUI.v4p">
@@ -19,9 +19,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="2">
-   <BOUNDS type="Node" left="2565" top="11760" width="100" height="100">
+   <BOUNDS type="Node" left="2565" top="12210" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2565" top="11760" width="2400" height="1800">
+   <BOUNDS type="Box" left="2565" top="12210" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="11070" top="255" width="3750" height="4515">
    </BOUNDS>
@@ -173,11 +173,11 @@
    <LINK srcnodeid="1" srcpinname="Item ID" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="9030" top="9870" width="0" height="0">
+   <BOUNDS type="Node" left="7440" top="9885" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9030" top="9870" width="480" height="480">
+   <BOUNDS type="Box" left="7440" top="9885" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -189,15 +189,15 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enable">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6630" top="9870" width="0" height="0">
+   <BOUNDS type="Node" left="6630" top="9885" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6630" top="9870" width="480" height="480">
+   <BOUNDS type="Box" left="6630" top="9885" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -217,11 +217,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="37" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="9840" top="9870" width="0" height="0">
+   <BOUNDS type="Node" left="9540" top="9885" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9840" top="9870" width="720" height="240">
+   <BOUNDS type="Box" left="9540" top="9885" width="885" height="300">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM21">
+   <PIN pinname="Input Enum" slicecount="1" values="COM23">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ComPort">
    </PIN>
@@ -265,9 +265,9 @@
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="40" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8235" top="9870" width="0" height="0">
+   <BOUNDS type="Node" left="8115" top="11175" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8235" top="9870" width="795" height="240">
+   <BOUNDS type="Box" left="8115" top="11175" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="170">
    </PIN>
@@ -281,7 +281,7 @@
    </PIN>
    </NODE>
    <NODE systemname="ServoControl" filename="ServoControl.v4p" nodename="ServoControl.v4p" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="4215" top="11775" width="5685" height="270">
+   <BOUNDS type="Node" left="3915" top="11775" width="5685" height="270">
    </BOUNDS>
    <PIN pinname="Servo Position" visible="1">
    </PIN>
@@ -298,7 +298,11 @@
    </NODE>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Servo Position">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Reset">
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Reset" linkstyle="Bezier">
+   <LINKPOINT x="6545" y="11098">
+   </LINKPOINT>
+   <LINKPOINT x="6160" y="11043">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Servo Degree">
    </LINK>
@@ -355,7 +359,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta29.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta31.2&cr;&lf;2013|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -943,7 +947,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2130" top="1815" height="270" width="810">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="7_1_beta29.2_ServoMotor">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="7_1_ServoMotor">
    </PIN>
    <PIN pinname="Output String" visible="0" pintype="Output">
    </PIN>
@@ -1087,11 +1091,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="100039" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7995" top="9030" width="6465" height="270">
+   <BOUNDS type="Node" left="7755" top="9060" width="6465" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7995" top="9030" width="2520" height="705">
+   <BOUNDS type="Box" left="7755" top="9060" width="2520" height="705">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Define your ComPort and enable the Arduino Node here.|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Define your ComPort and enable the Arduino Node here.&cr;&lf;Update the Port List First.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -1114,4 +1118,26 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100041" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8820" top="9885" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8820" top="9885" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Port List|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100041" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Update Port List">
+   </LINK>
    </PATCH>

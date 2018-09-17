@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\JL\Documents\GitHub\All_Patches\5_6_beta29.2_GestureControl\Skeleton.v4p" systemname="kinect" filename="C:\Users\JL\Desktop\kinect.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\JL\Documents\GitHub\5_6_GestureControl\Skeleton.v4p" systemname="kinect" filename="C:\Users\JL\Desktop\kinect.v4p">
    <BOUNDS type="Window" left="0" top="0" width="10950" height="11760">
    </BOUNDS>
    <NODE systemname="Kinect (Devices Microsoft)" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.MSKinect.dll" nodename="Kinect (Devices Microsoft)" componentmode="Hidden" id="2">
@@ -91,7 +91,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8595" top="5280" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -101,7 +101,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enabled">
    </PIN>
@@ -128,7 +128,7 @@
    <LINKPOINT x="6015" y="5758">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="8">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="8" stayontop="1">
    <BOUNDS type="Node" left="2550" top="21030" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2550" top="21030" width="2400" height="1800">
@@ -725,7 +725,7 @@
    </PIN>
    <BOUNDS type="Box" left="2925" top="7185">
    </BOUNDS>
-   <BOUNDS type="Window" left="5460" top="330" width="8985" height="13800">
+   <BOUNDS type="Window" left="3900" top="900" width="8985" height="13800">
    </BOUNDS>
    </NODE>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="158">
@@ -943,7 +943,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta29.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta31.2&cr;&lf;2013|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -1531,7 +1531,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2130" top="1815" height="270" width="810">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="5_6_beta29.2_Skeleton">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="5_6_Skeleton">
    </PIN>
    <PIN pinname="Output String" visible="0" pintype="Output">
    </PIN>
@@ -1748,10 +1748,10 @@
    </NODE>
    <LINK srcnodeid="2" srcpinname="Kinect Count" dstnodeid="100049" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="157" srcpinname="Joint ID" dstnodeid="151" dstpinname="Input String">
+   <LINK srcnodeid="157" srcpinname="Joint State" dstnodeid="155" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="157" srcpinname="Joint PositionXYZ" dstnodeid="156" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="157" srcpinname="Joint State" dstnodeid="155" dstpinname="Input String">
+   <LINK srcnodeid="157" srcpinname="Joint ID" dstnodeid="151" dstpinname="Input String">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\dl-110\Desktop\4_2_Temperatursensor\TemperatureSensor.v4p" bgcolor="15132390" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\4_2_Temperatursensor\TemperaturSensor.v4p" systemname="TemperaturSensor">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\JL\Documents\GitHub\4_2_Temperaturesensor\TemperatureSensor.v4p" bgcolor="15132390" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\4_2_Temperatursensor\TemperaturSensor.v4p" systemname="TemperaturSensor">
    <BOUNDS height="12240" left="0" top="0" type="Window" width="10950">
    </BOUNDS>
    <NODE componentmode="InABox" id="11" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="14430" top="10845" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
@@ -139,9 +139,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="157" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="100" left="4185" top="7905" type="Node" width="100">
+   <BOUNDS height="100" left="4200" top="7905" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="255" left="4185" top="7905" type="Box" width="465">
+   <BOUNDS height="255" left="4200" top="7905" type="Box" width="465">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="2">
    </PIN>
@@ -213,19 +213,19 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="204" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="6705" top="4695" width="0" height="0">
+   <BOUNDS type="Node" left="6705" top="5445" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6705" top="4695" width="795" height="270">
+   <BOUNDS type="Box" left="6705" top="5445" width="795" height="270">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM5">
+   <PIN pinname="Input Enum" slicecount="1" values="COM23">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ComPort">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="205" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6120" top="4695" width="0" height="0">
+   <BOUNDS type="Node" left="5685" top="5445" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6120" top="4695" width="480" height="480">
+   <BOUNDS type="Box" left="5685" top="5445" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -255,11 +255,11 @@
    </PIN>
    <PIN pinname="Show Slider" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1000">
+   <PIN pinname="Y Input Value" slicecount="1" values="1023">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="431">
+   <PIN pinname="X Input Value" slicecount="1" values="181.25">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -363,7 +363,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta29.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta31.2&cr;&lf;2013|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -951,7 +951,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2130" top="1815" height="270" width="810">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="4_2_beta29.2_TemperatureSensor">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="4_2_TemperatureSensor">
    </PIN>
    <PIN pinname="Output String" visible="0" pintype="Output">
    </PIN>
@@ -1109,9 +1109,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="100045" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="4050" top="4710" width="0" height="0">
+   <BOUNDS type="Node" left="4050" top="4695" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4050" top="4710" width="1005" height="285">
+   <BOUNDS type="Box" left="4050" top="4695" width="1005" height="285">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="20" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,ANALOG,ANALOG,ANALOG,ANALOG,ANALOG,ANALOG">
    </PIN>
@@ -1119,9 +1119,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="100047">
-   <BOUNDS type="Node" left="4350" top="5895" width="100" height="100">
+   <BOUNDS type="Node" left="4155" top="5670" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4350" top="5895" width="285" height="330">
+   <BOUNDS type="Box" left="4155" top="5670" width="435" height="420">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -1133,21 +1133,7 @@
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="100046" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4680" top="5895" width="3405" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4680" top="5895" width="3360" height="420">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;&lt; CHANGE&cr;&lf;Report Analog has to be switched on now!|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="5">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Report Analog Pins|">
    </PIN>
    </NODE>
    <NODE id="203" componentmode="Hidden" systemname="Arduino (Devices StandardFirmata 2.x)" filename="%VVVV%\addonpack\lib\nodes\modules\Devices\Arduino (Devices StandardFirmata 2.x).v4p" nodename="Arduino (Devices StandardFirmata 2.x)">
@@ -1184,10 +1170,32 @@
    </LINK>
    <LINK srcnodeid="204" srcpinname="Output Enum" dstnodeid="203" dstpinname="ComPort">
    </LINK>
-   <LINK srcnodeid="203" srcpinname="Analog In" dstnodeid="11" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="212" srcpinname="Y Output Value" dstnodeid="203" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="206" srcpinname="Y Output Value" dstnodeid="215" dstpinname="Y Input Value">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100048" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6195" top="4410" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6195" top="4410" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Port List|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100048" srcpinname="Y Output Value" dstnodeid="203" dstpinname="Update Port List">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Output" dstnodeid="215" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="206" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

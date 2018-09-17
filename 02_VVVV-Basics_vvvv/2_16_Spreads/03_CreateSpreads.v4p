@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\dl-110\Documents\GitHub\All_Patches\2_16_beta29.2_Spreads\03_CreateSpreads.v4p" systemname="Spreads" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_16_Spreads\Spreads.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\JL\Documents\GitHub\2_VVVV-Basics\2_16_Spreads\03_CreateSpreads.v4p" systemname="Spreads" filename="C:\Users\dl-110\Desktop\PrototpingInterfaces - Patches - 20130329 - mls\2_16_Spreads\Spreads.v4p">
    <BOUNDS type="Window" left="0" top="0" width="10950" height="14595">
    </BOUNDS>
    <NODE id="100038" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
@@ -51,7 +51,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta29.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta31.2&cr;&lf;2013|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>
@@ -1085,7 +1085,7 @@
    </BOUNDS>
    <BOUNDS height="2760" left="1620" top="9390" type="Window" width="2490">
    </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -1247,7 +1247,7 @@
    </BOUNDS>
    <BOUNDS height="2760" left="1620" top="9390" type="Window" width="2490">
    </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1271,7 +1271,7 @@
    </BOUNDS>
    <BOUNDS height="2760" left="1620" top="9390" type="Window" width="2490">
    </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1299,7 +1299,7 @@
    </BOUNDS>
    <BOUNDS height="2760" left="1620" top="9390" type="Window" width="2490">
    </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1323,7 +1323,7 @@
    </BOUNDS>
    <BOUNDS height="2760" left="1620" top="9390" type="Window" width="2490">
    </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1347,7 +1347,7 @@
    </BOUNDS>
    <BOUNDS height="2760" left="1620" top="9390" type="Window" width="2490">
    </BOUNDS>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>

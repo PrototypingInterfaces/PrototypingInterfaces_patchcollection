@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\dl-110\Documents\GitHub\All_Patches\5_1_beta29.2_Fiducial-Tracking\subpatches\Camera.v4p" systemname="Camera" filename="Z:\SEAGATE-ST760211DE-01\Patches\2_2_01_HT_Colortracking_121003\Subpatches\Camera.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\JL\Documents\GitHub\5_1_Fiducial-Tracking\subpatches\Camera.v4p" systemname="Camera" filename="Z:\SEAGATE-ST760211DE-01\Patches\2_2_01_HT_Colortracking_121003\Subpatches\Camera.v4p">
    <BOUNDS type="Window" left="1410" top="0" width="9555" height="9525">
    </BOUNDS>
    <NODE systemname="VideoIn (DShow9)" nodename="VideoIn (DShow9)" componentmode="Hidden" id="0">
@@ -95,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6600" top="4440" width="1590" height="240">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="None">
+   <PIN pinname="Input Enum" slicecount="1" values="MJPG">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Video Format|">
    </PIN>
@@ -107,7 +107,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9075" top="4440" width="1305" height="240">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="|PS3Eye Camera|">
+   <PIN pinname="Input Enum" slicecount="1" values="|Microsoft LifeCam Cinema|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Driver">
    </PIN>

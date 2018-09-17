@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\dl-110\Documents\GitHub\All_Patches\2_21_beta29.2_Subpatches\Subpatches\3DMatrix.v4p" filename="C:\Users\roman_g\Desktop\PrototypingInterfaces_Programmierung\BasicTutorials\1_1_17_BT_Subpatches\Subpatches\3DMatrix.v4p" systemname="3DMatrix">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.dtd" >
+   <PATCH nodename="C:\Users\JL\Documents\GitHub\2_VVVV-Basics\2_21_Subpatches\Subpatches\3DMatrix.v4p" filename="C:\Users\roman_g\Desktop\PrototypingInterfaces_Programmierung\BasicTutorials\1_1_17_BT_Subpatches\Subpatches\3DMatrix.v4p" systemname="3DMatrix">
    <BOUNDS height="10305" left="3255" top="1665" type="Window" width="10950">
    </BOUNDS>
    <NODE componentmode="Hidden" id="34" nodename="LinearSpread (Spreads)" systemname="LinearSpread (Spreads)">
@@ -175,7 +175,7 @@
    </PIN>
    </NODE>
    <NODE id="100037" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|45beta29.2&cr;&lf;2013|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" visible="0" pintype="Input" values="|vvvv_45beta30.2&cr;&lf;2013|">
    </PIN>
    <BOUNDS type="Node" height="270" left="165" top="2265" width="810">
    </BOUNDS>

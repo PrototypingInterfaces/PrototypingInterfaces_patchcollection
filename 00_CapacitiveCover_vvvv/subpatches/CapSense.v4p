@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
    <PATCH nodename="C:\Users\JL\Documents\GitHub\00_CapacitiveCover\subpatches\CapSense.v4p" systemname="CapSense" filename="C:\Users\JL\Desktop\Capsense\CapsenseLibrary\vvvv_cover\vvvv\CapSense.v4p">
    <BOUNDS type="Window" left="4710" top="1665" width="10245" height="11400">
    </BOUNDS>
@@ -22,28 +22,6 @@
    <PIN pinname="Set" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="17" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="2400" top="705" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="480" left="2400" top="705" type="Box" width="480">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enabled">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK dstnodeid="18" dstpinname="Set" srcnodeid="19" srcpinname="Inverse Output">
@@ -97,9 +75,9 @@
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="13" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
-   <BOUNDS type="Node" left="1815" top="2430" width="100" height="100">
+   <BOUNDS type="Node" left="2670" top="2430" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1815" top="2430" width="615" height="420">
+   <BOUNDS type="Box" left="2670" top="2430" width="615" height="420">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -149,9 +127,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Update" linkstyle="Bezier">
-   <LINKPOINT x="1872" y="3413">
+   <LINKPOINT x="2685" y="3458">
    </LINKPOINT>
-   <LINKPOINT x="2526" y="3443">
+   <LINKPOINT x="2550" y="3458">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="7" systemname="IOBox (Enumerations)">
@@ -166,30 +144,6 @@
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="11" dstpinname="Queue Mode">
    </LINK>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="3345" top="705" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3345" top="705" width="1080" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM23">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ComPort">
-   </PIN>
-   <PIN pinname="Output Enum" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="4" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="1380" top="705" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1380" top="705" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="9600">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Baud Rate|">
-   </PIN>
-   <PIN pinname="Output Enum" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="1050" top="9975" width="3690" height="270">
    </BOUNDS>
@@ -380,45 +334,17 @@
    </NODE>
    <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Source Minimum">
    </LINK>
-   <NODE systemname="RS232 (Devices)" nodename="RS232 (Devices)" componentmode="Hidden" id="75">
-   <BOUNDS type="Node" left="1050" top="1950" width="1575" height="270">
-   </BOUNDS>
-   <PIN pinname="Baud Rate" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <PIN pinname="ComPort" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="On Data" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Output Enum" dstnodeid="75" dstpinname="Baud Rate">
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="75" dstpinname="ComPort" linkstyle="Bezier">
-   <LINKPOINT x="3330" y="1440">
-   </LINKPOINT>
-   <LINKPOINT x="2625" y="1440">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="76">
    <BOUNDS type="Node" left="1050" top="3390" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Encoding" slicecount="1" values="us-ascii">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="75" srcpinname="Output" dstnodeid="76" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="11" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="75" srcpinname="On Data" dstnodeid="12" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="77">
    <BOUNDS type="Node" left="1035" top="5565" width="100" height="100">
@@ -488,4 +414,88 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="RS232 (Devices)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="RS232 (Devices)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="1050" top="1950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Baudrate" slicecount="1" visible="1" values="115200">
+   </PIN>
+   <PIN pinname="Update Port List" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="On Data" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="85">
+   <BOUNDS type="Node" left="1380" top="690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="690" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="9600">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Baudrate">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="83" dstpinname="Baudrate">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="86">
+   <BOUNDS type="Node" left="2610" top="1140" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2610" top="1140" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Port List|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Y Output Value" dstnodeid="83" dstpinname="Update Port List">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="87" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="2775" top="690" width="1590" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2775" top="690" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="COM23">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Port Name|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Output Enum" dstnodeid="83" dstpinname="Port Name">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="88">
+   <BOUNDS type="Node" left="4665" top="690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4665" top="690" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Y Output Value" dstnodeid="83" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="On Data" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="76" dstpinname="Input">
+   </LINK>
    </PATCH>
