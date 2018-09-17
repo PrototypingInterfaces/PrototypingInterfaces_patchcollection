@@ -1,16 +1,18 @@
 # Info:  
-The Patches in this Repository are developed with:  
-* vvvv45beta31.2
 
 # For more info please visit:  
 * http://prototypinginterfaces.com/ the Book about VVVV and Prototyping where all Patches are explained in full detail.  
 * https://github.com/PrototypingInterfaces/PrototypingInterfaces_patchcollectionthis this repository at github.com  
 * https://vvvv.org/ the visual/textual development environment used for all the examples in this repository.
 
+### September 2018 update:  
+https://github.com/joreg & https://github.com/antongit added as Collaborators patches updated based on their work from: https://github.com/vvvv/PrototypingInterfaces
+
 
 
 --------------------------------------------------
-### Copyright 2013 prototypinginterfaces.com  
+### Copyright 2013 prototypinginterfaces.com  &  2018 vvvv.org
+
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
