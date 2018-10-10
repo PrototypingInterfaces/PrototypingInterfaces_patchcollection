@@ -4,7 +4,7 @@
 * https://vvvv.org the visual/textual development environment used for all the examples in this repository.
 
 ### September 2018 update:
-* patches updated to vvvv 50beta36
+* patches updated to vvvv 50beta36: some screenshots in the book do no longer correspond to the new patches, see: AbweichendeAbbildungen.md
 
 --------------------------------------------------
 ### Copyright 2013 prototypinginterfaces.com  &  2018 vvvv.org
