@@ -1,5 +1,3 @@
-# Info:  
-
 # For more info please visit:  
 * http://prototypinginterfaces.com the Book about VVVV and Prototyping where all Patches are explained in full detail.  
 * https://github.com/PrototypingInterfaces/PrototypingInterfaces_patchcollection this this repository at github.com  
