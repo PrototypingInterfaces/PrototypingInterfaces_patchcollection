@@ -1,8 +1,4 @@
-# General
-
-All the "version.txt" and "readme.md" has to be updated to the new beta.
-
-# Book Screenshots needs to be updated (inkl. Patches):
+Auf folgenden Seiten im Buch, stimmen die Abbildungen in Bezug auf die genannten Stichwörter, nicht mehr mit den auf die neue vvvv Version aktualisierten Patches überein. 
 
 ```
 59. Koordinatensystem
@@ -51,24 +47,3 @@ All the "version.txt" and "readme.md" has to be updated to the new beta.
 271. Aspect Ratio, 2nd Renderer, Constant (Sphere). Reworked.
 272. Added Aspect Ratio for the Fotos. Rework?
 281. - 284. Introduce BadMapper?
-303. Arduino
-307. Mouse
-315. Arduino
-316. Aspect Ratio
-319. Intersect3d: Points2Vector, ApplyTransform
-```
-
-# Reworking Problems:
-```
-Freeframe:
-
-* 5_1_Fiducial-Tracking
-
-* 5_2_AugmentedReality
-
-* 5_3_Facetracking
-
-* 5_4_Colortracking
-
-* 6_3 - Unclear
-```
